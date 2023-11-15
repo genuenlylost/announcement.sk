@@ -1,0 +1,29 @@
+command /announce <string>:
+    permission: announce.use
+    permission message: <##ff1000>You do not have the required permission to use this command.
+    trigger:
+        broadcast "", "&d&lANNOUNCEMENT", "", "&f%colored arg 1%" and ""
+        send title "&d&lANNOUNCEMENT" to all players
+        send subtitle "&d&lREAD CHAT!" to all players
+
+command /smallannounce <string>:
+    permission: announce.use
+    permission message: <##ff1000>You do not have the required permission to use this command.
+    trigger:
+        broadcast "", "&d&lANNOUNCEMENT", "", "&f%colored arg 1%" and ""
+
+
+command /alertrestart:
+	permission: restart.perm
+	permission message: you dont have permission
+	trigger:
+		broadcast "", "&d&lANNOUNCEMENT", "", "&fSERVER RESTARTING IN 10 SECONDS!" and ""
+		wait 5 seconds
+		broadcast "", "&d&lANNOUNCEMENT", "", "&fSERVER RESTARTING IN 5 SECONDS!" and ""
+		wait 2 seconds
+		broadcast "", "&d&lANNOUNCEMENT", "", "&fSERVER RESTARTING IN 3 SECONDS!" and ""
+		wait 1 seconds
+		broadcast "", "&d&lANNOUNCEMENT", "", "&fSERVER RESTARTING IN 2 SECONDS!" and ""
+		wait 1 second
+        broadcast "", "&d&lANNOUNCEMENT", "", "&fSERVER RESTARTING IN 1 SECONDS!" and ""
+		execute console command "/restart"
