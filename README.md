@@ -15,6 +15,12 @@ It add a Title announcemnet and a Chat announcement controlled by commands!
 
 ```This skript uses the following Permissions: Announce.use, Restart.perm```
 
+**Supports:**
+
+> Latest version of skript
+> Colored text (&bText Here)
+> Supports 1.16.1 - 1.20.2
+
 # NO NEED TO CREDIT ME IN THE SKRIPT!
 
 **Im available for hire DM me! ```imllost```**
